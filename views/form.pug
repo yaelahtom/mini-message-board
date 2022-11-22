@@ -1,0 +1,12 @@
+extends layout
+
+block content
+  h1= title 
+  p Welcome to #{title}
+  form(action="/new", method="post") 
+    label(for="name") Name:
+    input(type="text", placeholder='name', name='name')
+    label(for="message") Message:
+    input(type="text", placeholder='message', name='message')
+    button(type='submit') Submit
+  a(href="/") back
