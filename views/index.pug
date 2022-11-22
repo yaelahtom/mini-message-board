@@ -5,9 +5,9 @@ block content
   p Welcome to #{title}
   ul
     each val in messages
-      li= val.user
-      li= val.text
-      li= val.added
+      li= 'name: ' + val.user
+      li= 'message: ' + val.text
+      li= 'added: ' + val.added
     else 
       li There r no values
   a(href="/new") new
